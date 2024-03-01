@@ -1,0 +1,86 @@
+body {
+    background-image: url("assets/cartoon-background.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0; /* Remove default margin */
+    font-family: "Arial", sans-serif;
+  }
+  
+  .container {
+    text-align: center;
+    margin: 20px;
+    margin-bottom: 5px;
+  }
+  
+  header {
+    color: #fff;
+    padding: 30px;
+    border-radius: 5px;
+  }
+  
+  h1 {
+    font-family: "Lobster", cursive;
+    font-size: 60px;
+    margin: 0;
+  }
+  
+  .alphabets {
+    background-color: rgba(255, 255, 255, 0.8); /* Use rgba for better opacity control */
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    margin-top: 10px;
+    border-color: aquamarine;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+  }
+  
+  .row-1,
+  .row-2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+    margin: 10px;
+    /* flex-wrap: wrap; Allow flex containers to wrap onto multiple lines */
+  }
+  .row-3{
+    /* display: flex; */
+    /* justify-content: space-between; */
+    align-items: center;
+    margin-top: 50px;
+    margin: 10px;
+  }
+  .alphabet-special{
+    width: 40px;
+    height: 40px;
+
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .alphabet {
+    width: 40px; /* Set a fixed width */
+    height: 40px; /* Set a fixed height */
+    background-color: #fff;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .alphabet p {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+    /* make the text green in colour */
+    color: green;
+  }
+  
