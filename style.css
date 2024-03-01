@@ -1,0 +1,97 @@
+body {
+  background-image: url("assets/cartoon-background.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.container {
+  text-align: center; /* Center-align the content inside the container */
+}
+
+header {
+  color: #fff;
+  padding: 30px;
+  border-radius: 5px;
+}
+
+h1 {
+  font-family: "Lobster", cursive;
+  font-size: 60px;
+  margin: 0;
+}
+
+/* the row should take full space */
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+}
+
+/* Container on the right */
+.container-cards {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  margin-top: 50px;
+  margin-right: 50px; /* Adjust margin to move it to the right */
+  /* disable underline */
+   
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+  }
+
+.card-1 {
+  background-color: #f8f8f8;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 10px;
+  width: 250px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  border: 2px solid #00ff00;
+  text-align: center;
+  font-family: "Lobster", cursive;
+  font-size: 18px;
+  
+}
+
+
+/* on hover turn light green */
+.card-1:hover {
+  background-color: #e6ffe6;
+}
+
+
+.card-2 {
+  background-color: #f8f8f8;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 10px;
+  width: 250px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  border: 2px solid #00ff00;
+  text-align: center;
+  font-family: "Lobster", cursive;
+  font-size: 18px;
+}
+.card-2:hover {
+    background-color: #e6ffe6;
+}
+
+/* Container on the left */
+.container-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin-top: 0px;
+  margin-left: 100px; /* Adjust margin to move it to the left */
+}
