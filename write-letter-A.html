@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Write Letter A</title>
+    <link rel="stylesheet" href="style4.css" />
+    <style>
+      canvas {
+        border: 2px solid #000;
+        cursor: crosshair;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="back-icon">
+        <a href="index2.html">
+          <img
+            src="assets/back image.png"
+            alt="back button"
+            height="60"
+            width="75"
+          />
+        </a>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="card-1">
+        <p>A</p>
+      </div>
+      <div class="card">
+        <p id="correct"></p>
+        <p id="incorrect"></p>
+        <canvas id="handwritingCanvas" width="300" height="250"></canvas>
+        <button onclick="recognizeLetter()">Submit</button>
+        <button onclick="clearCanvas()">Clear</button>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="./handwriting.canvas.js"></script>
+    <script>
+      // Create a handwriting.Canvas object for the canvas
+      var handwritingCanvas = new handwriting.Canvas(
+        document.getElementById("handwritingCanvas")
+      );
+
+      // Set callback function to handle recognition results or errors
+      handwritingCanvas.setCallBack(function (data, err) {
+        if (err) {
+          console.error(err);
+        } else {
+          if (data[0] === "A") {
+            // display a text on the screen that the letter is correct
+            document.getElementById("correct").innerHTML = "Correct!";
+          } else {
+            // display a text on the screen that the letter is incorrect
+            document.getElementById("incorrect").innerHTML = "Incorrect!";
+          }
+          console.log("Recognized result:", data);
+        }
+      });
+
+      // Set options (optional)
+      handwritingCanvas.setOptions({
+        language: "en",
+        numOfReturn: 1,
+      });
+
+      // Recognize the captured trace
+      function recognizeLetter() {
+        handwritingCanvas.recognize();
+      }
+
+      // Clear the canvas, captured trace, and stored steps
+      function clearCanvas() {
+        handwritingCanvas.erase();
+        document.getElementById("correct").innerHTML = "";
+        document.getElementById("incorrect").innerHTML = "";
+      }
+    </script>
+  </body>
+</html>
