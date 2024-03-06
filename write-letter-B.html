@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Write Letter A</title>
+    <title>Write Letter B</title>
     <link rel="stylesheet" href="style4.css" />
     <style>
       canvas {
@@ -28,7 +28,7 @@
 
     <div class="row">
       <div class="card-1">
-        <p>A</p>
+        <p>B</p>
       </div>
       <div class="card">
         <p id="correct"></p>
@@ -51,7 +51,7 @@
         if (err) {
           console.error(err);
         } else {
-          if (data[0] === "A") {
+          if (data[0] === "B") {
             document.getElementById("correct").innerHTML = "Correct!";
             drawHereText.style.display = "none";
           } else {

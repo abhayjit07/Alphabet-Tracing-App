@@ -73,3 +73,28 @@ button {
 button:hover {
     background-color: #033954;
 }
+
+
+/* add style for this
+    <p id="correct"></p>
+    <p id="incorrect"></p> */
+
+#correct {
+    color: green;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0px;
+}
+#incorrect {
+    color: red;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0px;
+}
+
+#drawHereText{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0px;
+}
+
