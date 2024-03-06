@@ -6,13 +6,24 @@ body {
     margin: 0; /* Remove default margin */
     font-family: "Arial", sans-serif;
   }
-  
+
   .container {
     text-align: center;
-    margin: 20px;
-    margin-bottom: 5px;
+    margin: 5px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
   
+  .back-button {
+    margin-right: auto; 
+  }
+  
+  .header {
+    flex-grow: 1;
+    text-align: center;
+  }
+    
   header {
     color: #fff;
     padding: 30px;
@@ -24,8 +35,9 @@ body {
     font-size: 60px;
     margin: 0;
   }
-  
+
   .alphabets {
+    margin-top: 0px;
     background-color: rgba(255, 255, 255, 0.8); /* Use rgba for better opacity control */
     border-radius: 10px;
     padding: 20px;
@@ -33,7 +45,9 @@ body {
     margin-top: 10px;
     border-color: aquamarine;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+    /* backdrop-filter: blur(8px); Add a blur effect */
   }
+  
   
   .row-1,
   .row-2{
